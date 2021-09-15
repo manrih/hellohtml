@@ -32,6 +32,10 @@
                     countingVariable -= 1;
                     document.getElementById('countingField').innerHTML = countingVariable;
                 }
+
+                function displayName(){
+                    document.getElementById('displayName').innerHTML = "Your name is " + document.getElementById('inputName').value;
+                }
             </script>
             <h2> Subheading 2 </h2>
             <ol>
@@ -45,10 +49,8 @@
             </ol>
         </div>
 
-        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
-        Button that displays Date and Time when clicked.</button>
-
-        <p id="demo"></p>
+        <p id="inputField"> Tell me your name: <input name="inputName" type="text" maxlength="512" id="inputName" class="field"/> <button onclick="displayName()"> Done </button></p>
+        <p id="displayName"> </p>
 
         <br>
         <div tabindex="2"> 
