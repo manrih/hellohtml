@@ -21,13 +21,27 @@ a{
   font-family: 'Open Sans',sans-serif;
 }
 
+.icon{
+  border-radius: 30%;
+}
+
+.highlight-text{
+  color: #ff6633; 
+  font-weight: 700;
+}
+
+img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+
 @media only screen and (max-width: 640px) {
   img{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-width: 90%;
+    max-width: 60%;
     height: auto;
+    
   }
 
   .icon{
@@ -35,9 +49,24 @@ a{
   }
 }
 
-@media only screen and (min-width: 640px) and (max-width: 900px) {
+@media only screen and (min-width: 640px){
   img{
-    max-width: 350px;
+    max-width: 240px;
   }
   
+  p{
+    display: flex;
+    justify-content: center;
+  }
+
+  .highlight-text{
+    margin-right: 3px;
+  }
+}
+
+
+@media only screen and (min-width: 900px){
+  img{
+    max-width: 340px;
+  }
 }
