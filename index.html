@@ -19,17 +19,42 @@
             <p> <span class="highlight-text"> This paragraph </span> talks about something different.</p>
         </div>
         <div tabindex="1">
+            <script>
+                var varName = "tomato";
+
+                var countingVariable = 0;
+
+                function addOne(){
+                    countingVariable += 1;
+                    document.getElementById('countingField').innerHTML = countingVariable;
+                }
+                function removeOne(){
+                    countingVariable -= 1;
+                    document.getElementById('countingField').innerHTML = countingVariable;
+                }
+            </script>
             <h2> Subheading 2 </h2>
             <ol>
                 <li> List item 1</li>
                 <li> List item 2</li>
                 <li> List item 3</li>
+                <li> <button type="button" onclick="document.getElementById('editText').innerHTML = varName"> Button </button> </li>
+                <li id="editText"> Text to be replaced. </li>
+                <li> <button type="button" onclick="addOne()"> Add one button </button> <button type="button" onclick="removeOne()"> Remove one </button> </li>
+                <li id="countingField"> Counting field </li>
             </ol>
         </div>
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Button that displays Date and Time when clicked.</button>
+
+        <p id="demo"></p>
+
         <br>
         <div tabindex="2"> 
             <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Image.jpg" alt="Image that says image" height="300">
         </div>
+        <hr class="dotted">
         <footer>
             <br>
             <a href="https://uk.linkedin.com/">

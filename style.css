@@ -37,6 +37,10 @@ img{
   margin: auto;
 }
 
+hr.dotted {
+  border-top: 3px dotted #bbb;
+}
+
 @media only screen and (max-width: 640px) {
   img{
     max-width: 60%;
