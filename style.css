@@ -1,9 +1,43 @@
 body {
-    background-color: pink;
+  background-color: #fef6ad;
+}
+
+h2{
+  color: #0066cc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+p, li,ol,ul{
+  font-family: 'Open Sans',sans-serif;
+  color: black;
+  font-weight: 400;
+}
+
+a{
+  margin-right: 10px;
+  font-family: 'Open Sans',sans-serif;
+}
+
+@media only screen and (max-width: 640px) {
+  img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 90%;
+    height: auto;
   }
-h1 {
-    color: black;
+
+  .icon{
+    max-width: 50px;
   }
-p {
-    color: gray;
+}
+
+@media only screen and (min-width: 640px) and (max-width: 900px) {
+  img{
+    max-width: 350px;
   }
+  
+}
